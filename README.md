@@ -1,12 +1,41 @@
-# React + Vite
+# 🏎️ F1 Aerodynamic & Telemetry Analysis Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project consists of two full-stack web applications:
 
-Currently, two official plugins are available:
+1. **Aerodynamic Performance Monitoring Tool** – Predicts downforce loss based on car setup, track conditions, and wing configurations using ML models.
+2. **F1 Telemetry Maintenance Platform** – Analyzes telemetry data to forecast maintenance needs using LSTM and traditional regression techniques.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Frontend:** Vue.js  
+**Backend:** FastAPI (Python)  
+**Database:** PostgreSQL  
+**ML Models:** Regression, Random Forest, LSTM  
+**Visualization:** Chart.js / Plotly  
+**Others:** Pandas, Scikit-learn, NumPy
+
+---
+
+## 📁 Project Structure
+
+```bash
+project-root/
+│
+├── frontend/              # Vue.js frontend for both apps
+│   ├── public/
+│   └── src/
+│       ├── components/
+│       └── views/
+│
+├── backend/               # FastAPI backend
+│   ├── app/
+│   │   ├── main.py
+│   │   ├── models/
+│   │   ├── routes/
+│   │   └── ml_models/
+│
+├── data/                  # Sample datasets and preprocessed telemetry
+│
+└── README.md
